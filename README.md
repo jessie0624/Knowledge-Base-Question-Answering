@@ -1,4 +1,4 @@
-# KB_QA (Knowledge Based Question Answering)
+# KB_QA (Knowledge Base Question Answering)
 
 ## Introduction
 This is knowledge base QA task with the data from http://tcci.ccf.org.cn/conference/2017/taskdata.php (task 5: Open Domain Question Answering).
