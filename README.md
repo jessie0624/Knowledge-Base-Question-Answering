@@ -11,7 +11,7 @@ Chinese version introduction: https://blog.csdn.net/m0_37531129/article/details/
 1. My development environment is ubuntu 14.04 with pytorch 1.2.0.
 2. Please make sure 'mysql' was installed in your desktop/PC. There are many guidances for mysql installing in Ubuntu.
 
-### 2. repeat the model.
+### 2. repeat the model
 You can clone or download this 'KB_QA' repository.
 
 #### Step-1: prepare data. (no parameter, just run by script in termial by cmd like 'python xxx.py')
