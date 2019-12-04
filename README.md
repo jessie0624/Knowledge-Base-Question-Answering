@@ -16,11 +16,16 @@ You can clone or download this 'KB_QA' repository.
 
 #### Step-1: prepare data. (no parameter, just run by script in termial by cmd like 'python xxx.py')
 - run splitTest.py
+
     There are train and test dataset in NLPCC2017 task5. We can spilt test data by 1:1 to get test and dev data.
+    
 - run preCleanData.py 
+
     There are three functions in this script: getNERData, getDBData and getSimilarityData.
     You will get three folders named NERData, DBData, SIMData.
+    
 - run uploadDB.py
+
     (pls create a KB_QA database  in mysql).
     Running the script, it will upload data in DBData folder to KB_QA database.   
 
