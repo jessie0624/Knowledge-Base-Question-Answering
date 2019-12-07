@@ -326,7 +326,7 @@ def main():
     parser.add_argument("--data_dir", default=None, type=str, required=True,
                         help="数据文件目录，因当有train.text dev.text")
 
-    parser.add_argument("--vob_file", default=None, type=str, required=True,
+    parser.add_argument("--vocab_file", default=None, type=str, required=True,
                         help="词表文件")
     parser.add_argument("--model_config", default=None, type=str, required=True,
                         help="模型配置文件json文件")
@@ -363,7 +363,7 @@ def main():
 
     args = parser.parse_args()
     assert os.path.exists(args.data_dir)
-    assert os.path.exists(args.vob_file)
+    assert os.path.exists(args.vocab_file)
     assert os.path.exists(args.model_config)
     assert os.path.exists(args.pre_train_model)
 
@@ -380,7 +380,7 @@ def main():
     tokenizer_inputs = ()
     tokenizer_kwards = {'do_lower_case': False,
                         'max_len': args.max_seq_length,
-                        'vocab_file': args.vob_file}
+                        'vocab_file': args.vocab_file}
     tokenizer = BertTokenizer(*tokenizer_inputs, **tokenizer_kwards)
 
     train_dataset = load_and_cache_example(args, tokenizer, processor, 'train')
