@@ -326,10 +326,10 @@ def main():
     parser = argparse.ArgumentParser()
     parser.add_argument('--data_dir', default='preProcesssData/NERData', type=str, required=False,
                         help='训练数据, NERData folder')
-    parser.add_argument('--vocab_file', default='BertPreTrainedModel/bert-base-chinese-vocab.txt',
+    parser.add_argument('--vocab_file', default='BertPreTrainedModel/vocab.txt',
                         type=str, required=False,
                         help='词汇表 vocab')
-    parser.add_argument('--model_config', default='BertPreTrainedModel/bert-base-chinese-config.json',
+    parser.add_argument('--model_config', default='BertPreTrainedModel/config.json',
                         type=str, required=False,
                         help='预训练config 参数文件')
     parser.add_argument('--output_dir', default='output_model', type=str, required=Flase,
